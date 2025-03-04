@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --main-color: #042818;
+    --sec-color: #f3ad02;
+    --f-font-family: "Lobster", sans-serif;
+    --s-font-family: "Outfit", sans-serif;
+}
+
+body 
+{
+    font-family: var(--s-font-family);
+}
+
+
+/* Navbar start */
+.navbar 
+{
+    background: var(--main-color);
+}
+
+.navbar .navbar-brand 
+{
+    font-family: var(--f-font-family);
+    font-size: 1.5rem;;
+}
+
+.navbar .nav-link
+{
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: 550;
+}
+
+.navbar .nav-link:hover  
+{
+    color: var(--sec-color);
+}
+/* Navbar End */
+
+
+/*  Home start */
+.home 
+{
+    background: var(--main-color);
+    color: #fff
+}
+
+.home h1 span
+{
+    color: var(--sec-color);
+    font-size: 2.3rem;
+}
+
+.home p 
+{
+    font-family: var(--f-font-family);
+}
+
+.home .btn-primary 
+{
+    background: var(--sec-color);
+    border: none;
+    font-weight: 450;
+}
+
+.home .btn-secondary 
+{
+    background: none;
+    border: 1px solid var(--sec-color);
+    color: #fff;
+    font-weight: 450;
+}
+
+.home img 
+{
+    max-width: 500px;
+    width: 100%;
+}
+
+.home .leaf 
+{
+    color: #f9c13373;
+}
+
+.home .leaf-2 
+{
+    position: absolute;
+    top: 100%;
+}
+/*  Home End */
+
+
+/* Next home start */
+.next-home .card 
+{
+    border: 1px solid var(--main-color);
+    color: var(--main-color)
+}
+/* Next home End */

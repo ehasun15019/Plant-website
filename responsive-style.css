@@ -1,0 +1,39 @@
+/* Home Start */
+@media only screen and (max-width: 650px){
+    .home .btn-secondary  
+    {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .home .btn-secondary  
+    {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .home .btn-secondary {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .home .btn-secondary {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .home .home-content {
+        order: 2;
+    }
+    
+    .home img {
+        order: 1;
+    }
+}
+/* Home End */
