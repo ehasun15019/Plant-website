@@ -1,155 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plant Web</title>
 
     <!-- Favicon start -->
-    <link rel="icon" type="img/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="img/x-icon" href="/img/favicon.ico" />
 
     <!-- Bootstrap cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!-- box icon cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+    />
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Owe css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive-style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive-style.css" />
+  </head>
+  <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand text-light" href="#">Indoor Plants</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#popular">Popular</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#review">Review</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Home start -->
-      <div class="container-fluid home pt-5 pb-5" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <div class="home-content">
-                        <h1><span>Plants</span> male a positive impact on <span>your</span> environment</h1>
-
-                        <p class="fs-4">Indoor plants are great for creating a more welcoming room in your house.</p>
-
-                        <button class="btn btn-primary py-2 px-3">Shop Now <i class='bx bx-leaf ps-2'></i></button>
-
-                        <button class="btn btn-secondary py-2 px-3 ms-lg-3 ms-sm-0">Know More <i class='bx bx-leaf ps-2'></i></button>
-
-                        <p class="fs-6 pt-4">
-                            You will get 30-days free trail
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="col-lg-7 col-md-6 col-sm-12 d-flex justify-content-end">
-                    <i class='bx bx-leaf fs-4 leaf'></i>
-
-                    <img src="img/home.png" alt="home image" class="img-fluid">
-
-                    <i class='bx bxs-leaf fs-4 leaf leaf-2'></i>
-                </div>
-            </div>
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">Indoor Plants</a>
+        <button
+          class="navbar-toggler text-white border-0 btn-outline-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <i class='bx bx-menu'></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popular">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Review</a>
+            </li>
+          </ul>
         </div>
       </div>
-    <!-- Home End -->
+    </nav>
+    <!-- Navbar End -->
 
-
-    <!-- Next home start -->
-     <div class="container py-4 next-home">
+    <!-- Home start -->
+    <div class="container-fluid home pt-5 pb-5" id="home">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-              <div class="card">
-                <div class="card-body">
-                    <div class="d-flex align-items-center gap-2">
-                        <i class='bx bxs-truck fs-1'></i>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="home-content">
+              <h1>
+                <span>Plants</span> male a positive impact on
+                <span>your</span> environment
+              </h1>
 
-                        <h5 class="card-title">Fast <br/> Delivery</h5>
-                    </div>
-                  <p class="card-text">Quick & Hassle-Free Delivery! Lightning-Fast Shipping.</p>
-                </div>
-              </div>
-            </div>          
-            
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center gap-2">
-                            <i class='bx bx-headphone fs-1'></i>
-    
-                            <h5 class="card-title">Great Coustomer <br/> Service</h5>
-                        </div>
-                      <p class="card-text">Exceptional Support, Every Time. Support You Can Rely On.</p>
-                    </div>
-                  </div>
-            </div>
+              <p class="fs-4">
+                Indoor plants are great for creating a more welcoming room in
+                your house.
+              </p>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center gap-2">
-                            <i class='bx bx-leaf fs-1'></i>
-    
-                            <h5 class="card-title">Original <br/> Plant</h5>
-                        </div>
-                      <p class="card-text">100% Authentic & Natural Plants.</p>
-                    </div>
-                  </div>
-            </div>
+              <button class="btn btn-primary py-2 px-3">
+                Shop Now <i class="bx bx-leaf ps-2"></i>
+              </button>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center gap-2">
-                            <i class='bx bx-dollar-circle fs-1'></i>
-    
-                            <h5 class="card-title">Affordable <br/> Price</h5>
-                        </div>
-                      <p class="card-text">Premium Products, Budget-Friendly Prices.</p>
-                    </div>
-                  </div>
+              <button class="btn btn-secondary py-2 px-3 ms-lg-3 ms-sm-0">
+                Know More <i class="bx bx-leaf ps-2"></i>
+              </button>
+
+              <p class="fs-6 pt-4">You will get 30-days free trail</p>
             </div>
           </div>
-     </div>
+
+          <div class="col-lg-7 col-md-6 col-sm-12 d-flex justify-content-end">
+            <i class="bx bx-leaf fs-4 leaf"></i>
+
+            <img src="img/home.png" alt="home image" class="img-fluid" />
+
+            <i class="bx bxs-leaf fs-4 leaf leaf-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Home End -->
+
+    <!-- Next home start -->
+    <div class="container py-4 next-home">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bx bxs-truck fs-1"></i>
+
+                <h5 class="card-title">
+                  Fast <br />
+                  Delivery
+                </h5>
+              </div>
+              <p class="card-text">
+                Quick & Hassle-Free Delivery! Lightning-Fast Shipping.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bx bx-headphone fs-1"></i>
+
+                <h5 class="card-title">
+                  Great Coustomer <br />
+                  Service
+                </h5>
+              </div>
+              <p class="card-text">
+                Exceptional Support, Every Time. Support You Can Rely On.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bx bx-leaf fs-1"></i>
+
+                <h5 class="card-title">
+                  Original <br />
+                  Plant
+                </h5>
+              </div>
+              <p class="card-text">100% Authentic & Natural Plants.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bx bx-dollar-circle fs-1"></i>
+
+                <h5 class="card-title">
+                  Affordable <br />
+                  Price
+                </h5>
+              </div>
+              <p class="card-text">Premium Products, Budget-Friendly Prices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Next home End -->
 
-
     <!-- About start -->
-     <div class="container-fluid about" id="about">
+    <div class="container-fluid about" id="about">
       <div class="row">
         <div class="col-12">
           <div class="about-right-image d-flex justify-content-end">
-            <img src="img/leaf-3.png" alt="leaf image" class="img-fluid">
+            <img src="img/leaf-3.png" alt="leaf image" class="img-fluid" />
 
             <div class="about-heading">
               <h2>About Us</h2>
@@ -162,44 +200,57 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="img/plant-1.png" alt="plant 1" class="img-fluid plant1">
+            <img src="img/plant-1.png" alt="plant 1" class="img-fluid plant1" />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="about-content pt-5">
-              <h2>Make your organic <br> <span>garden</span></h2>
+              <h2>
+                Make your organic <br />
+                <span>garden</span>
+              </h2>
               <p class="fs-5">
-                In the heart of my garden, nature awakens with the soft whisper of leaves and the gentle sway of colorful flowers. Butterflies dance from petal to petal, while the sweet fragrance of blooming roses fills the air. Each corner is a peaceful escape, where the sound of chirping birds and the rustling breeze create a symphony of serenity.
+                In the heart of my garden, nature awakens with the soft whisper
+                of leaves and the gentle sway of colorful flowers. Butterflies
+                dance from petal to petal, while the sweet fragrance of blooming
+                roses fills the air. Each corner is a peaceful escape, where the
+                sound of chirping birds and the rustling breeze create a
+                symphony of serenity.
               </p>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="container container-2">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="about-content pt-5">
-              <h2>Come with us <br> <span>grow up </span>your plant</h2>
+              <h2>
+                Come with us <br />
+                <span>grow up </span>your plant
+              </h2>
               <p class="fs-5">
-                Every morning, I step into my garden, greeted by the freshness of dew-kissed leaves. As I water the plants, I recall the journey of each tiny seed turning into a thriving bloom. The sun rises, casting golden rays over my favorite roses, making them glisten as if they hold little secrets of the earth.
+                Every morning, I step into my garden, greeted by the freshness
+                of dew-kissed leaves. As I water the plants, I recall the
+                journey of each tiny seed turning into a thriving bloom. The sun
+                rises, casting golden rays over my favorite roses, making them
+                glisten as if they hold little secrets of the earth.
               </p>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="img/plant-2.png" alt="plant 1" class="img-fluid plant1">
+            <img src="img/plant-2.png" alt="plant 1" class="img-fluid plant1" />
           </div>
         </div>
       </div>
-     </div>
+    </div>
     <!-- About End -->
 
-
     <!-- popular start -->
-     <div class="popular py-5" id="popular">
+    <div class="popular py-5" id="popular">
       <div class="container">
         <div class="row">
-
           <div class="popular_header text-center mb-4">
             <h2>Your Choice Plant</h2>
             <p class="text-light fs-5">Follow instruction for more</p>
@@ -207,24 +258,31 @@
 
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
             <div class="card">
-              <img src="img/cart-1.png" class="card-img-top" alt="cart 1">
+              <img src="img/cart-1.png" class="card-img-top" alt="cart 1" />
               <div class="card-body">
-                <p class="card-title text-center text-light">Nephrolepis exaltata</p>
+                <p class="card-title text-center text-light">
+                  Nephrolepis exaltata
+                </p>
                 <h3 class="card-text text-center text-light">Bostan Fren</h3>
-                
+
                 <div class="ratings">
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star-half' style='color: var(--sec-color)' ></i>
-                  <i class='bx bx-star' style='color:#ffffff' ></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i
+                    class="bx bxs-star-half"
+                    style="color: var(--sec-color)"
+                  ></i>
+                  <i class="bx bx-star" style="color: #ffffff"></i>
                 </div>
 
-                <div class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2">
+                <div
+                  class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2"
+                >
                   <p>$5</p>
 
                   <a href="#" class="cart-icon">
-                    <i class='bx bx-cart'></i>
+                    <i class="bx bx-cart"></i>
                   </a>
                 </div>
               </div>
@@ -233,24 +291,31 @@
 
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
             <div class="card">
-              <img src="img/cart-2.png" class="card-img-top" alt="cart 1">
+              <img src="img/cart-2.png" class="card-img-top" alt="cart 1" />
               <div class="card-body">
-                <p class="card-title text-center text-light">Nephrolepis exaltata</p>
+                <p class="card-title text-center text-light">
+                  Nephrolepis exaltata
+                </p>
                 <h3 class="card-text text-center text-light">Bostan Fren</h3>
-                
+
                 <div class="ratings">
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star-half' style='color: var(--sec-color)' ></i>
-                  <i class='bx bx-star' style='color:#ffffff' ></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i
+                    class="bx bxs-star-half"
+                    style="color: var(--sec-color)"
+                  ></i>
+                  <i class="bx bx-star" style="color: #ffffff"></i>
                 </div>
 
-                <div class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2">
+                <div
+                  class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2"
+                >
                   <p>$5</p>
 
                   <a href="#" class="cart-icon">
-                    <i class='bx bx-cart'></i>
+                    <i class="bx bx-cart"></i>
                   </a>
                 </div>
               </div>
@@ -259,24 +324,31 @@
 
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
             <div class="card">
-              <img src="img/cart-3.png" class="card-img-top" alt="cart 1">
+              <img src="img/cart-3.png" class="card-img-top" alt="cart 1" />
               <div class="card-body">
-                <p class="card-title text-center text-light">Nephrolepis exaltata</p>
+                <p class="card-title text-center text-light">
+                  Nephrolepis exaltata
+                </p>
                 <h3 class="card-text text-center text-light">Bostan Fren</h3>
-                
+
                 <div class="ratings">
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star-half' style='color: var(--sec-color)' ></i>
-                  <i class='bx bx-star' style='color:#ffffff' ></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i
+                    class="bx bxs-star-half"
+                    style="color: var(--sec-color)"
+                  ></i>
+                  <i class="bx bx-star" style="color: #ffffff"></i>
                 </div>
 
-                <div class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2">
+                <div
+                  class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2"
+                >
                   <p>$5</p>
 
                   <a href="#" class="cart-icon">
-                    <i class='bx bx-cart'></i>
+                    <i class="bx bx-cart"></i>
                   </a>
                 </div>
               </div>
@@ -285,24 +357,31 @@
 
           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
             <div class="card">
-              <img src="img/cart-4.png" class="card-img-top" alt="cart 1">
+              <img src="img/cart-4.png" class="card-img-top" alt="cart 1" />
               <div class="card-body">
-                <p class="card-title text-center text-light">Nephrolepis exaltata</p>
+                <p class="card-title text-center text-light">
+                  Nephrolepis exaltata
+                </p>
                 <h3 class="card-text text-center text-light">Bostan Fren</h3>
-                
+
                 <div class="ratings">
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star' style='color: var(--sec-color)'></i>
-                  <i class='bx bxs-star-half' style='color: var(--sec-color)' ></i>
-                  <i class='bx bx-star' style='color:#ffffff' ></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i class="bx bxs-star" style="color: var(--sec-color)"></i>
+                  <i
+                    class="bx bxs-star-half"
+                    style="color: var(--sec-color)"
+                  ></i>
+                  <i class="bx bx-star" style="color: #ffffff"></i>
                 </div>
 
-                <div class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2">
+                <div
+                  class="cart-sec text-light d-flex justify-content-between align-items-center px-2 py-2"
+                >
                   <p>$5</p>
 
                   <a href="#" class="cart-icon">
-                    <i class='bx bx-cart'></i>
+                    <i class="bx bx-cart"></i>
                   </a>
                 </div>
               </div>
@@ -310,29 +389,31 @@
           </div>
         </div>
       </div>
-     </div>
+    </div>
     <!-- popular End -->
 
-
     <!-- Review start -->
-     <div class="review py-5" id="review">
+    <div class="review py-5" id="review">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="review-header text-center py-4">
-              <img src="img/leaf-4.png" alt="leaf 4">
+              <img src="img/leaf-4.png" alt="leaf 4" />
               <h2>Customer Review</h2>
               <p class="fs-5">Follow instruction for more</p>
             </div>
           </div>
-        
 
           <div class="swiper mySwiper mt-5">
             <div class="swiper-wrapper">
               <div class="swiper-slide rounded-3">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -344,19 +425,11 @@
               <div class="swiper-slide">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="review-content">
-                      <h5>Jhone Doe</h5>
-                      <p>Designer</p>
-                    </div>
-                  </div>
-                </div>  
-              </div>
-
-              <div class="swiper-slide">
-                <div class="card border-0">
-                  <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -368,7 +441,11 @@
               <div class="swiper-slide">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -380,7 +457,11 @@
               <div class="swiper-slide">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -392,7 +473,11 @@
               <div class="swiper-slide">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -404,7 +489,11 @@
               <div class="swiper-slide">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -416,7 +505,11 @@
               <div class="swiper-slide">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -428,7 +521,11 @@
               <div class="swiper-slide">
                 <div class="card border-0">
                   <div class="card-body text-light">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
                     <div class="review-content">
                       <h5>Jhone Doe</h5>
                       <p>Designer</p>
@@ -437,35 +534,119 @@
                 </div>
               </div>
 
+              <div class="swiper-slide">
+                <div class="card border-0">
+                  <div class="card-body text-light">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
+                    <div class="review-content">
+                      <h5>Jhone Doe</h5>
+                      <p>Designer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
       </div>
-     </div>
+    </div>
     <!-- Review End -->
 
+    <!-- Footer start -->
+    <footer class="footer py-5">
 
+      <div class="social-bar container">
+        <div class="line"></div>
+        <div class="icons">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
 
+      <div class="container footer-image">
+        <div class="row py-5">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="leaf-icons text-lg-center">
+              <i class="bx bxs-leaf fs-1"></i>
+              <p class="fs-4">Indoor Plants</p>
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4>Quick Links</h4>
+              <div class="footer_link_one">
+                <li><a href="#" class="fs-5 mb-3">Plant</a></li>
+                <li><a href="#" class="fs-5 mb-3">Flower</a></li>
+                <li><a href="#" class="fs-5 mb-3">Gardening</a></li>
+                <li><a href="#" class="fs-5 mb-3">Seeds</a></li>
+                <li><a href="#" class="fs-5 mb-3">Shipping</a></li>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4>Popular Service</h4>
+              <div class="footer_link_one">
+                <li><a href="#" class="fs-5 mb-3">Tree Plantation</a></li>
+                <li><a href="#" class="fs-5 mb-3">Grass Cutting</a></li>
+                <li><a href="#" class="fs-5 mb-3">Weeds Control</a></li>
+                <li><a href="#" class="fs-5 mb-3">Project!</a></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4>Contact Us</h4>
+
+              <div class="contact_content_one">
+                <li>
+                  <i class="bx bx-map fs-5"></i> <span>123, New York, USA</span>
+                </li>
+                <li>
+                  <i class="bx bx-phone fs-5"></i> <span>+123 456 7890</span>
+                </li>
+                <li>
+                  <i class="bx bx-envelope fs-5"> indoorplant@gmail.com</i>
+                  <span></span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
     <!-- Bootstrap js link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
-</body>
+  </body>
 </html>
