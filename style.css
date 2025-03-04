@@ -9,6 +9,8 @@
 :root 
 {
     --main-color: #042818;
+    --main-sec-color: #0d3d26;
+    --card-color: #042818;
     --sec-color: #f3ad02;
     --f-font-family: "Lobster", sans-serif;
     --s-font-family: "Outfit", sans-serif;
@@ -105,3 +107,144 @@ body
     color: var(--main-color)
 }
 /* Next home End */
+
+
+/* About Start */
+#about 
+{
+    background: var(--main-color);
+    color: #fff;
+}
+
+.about-right-image 
+{
+    position: relative;
+}
+
+.about-right-image img 
+{
+    max-width: 300px;
+    width: 100%;
+}
+
+.about-heading 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.about-heading h2 
+{
+    font-family: var(--f-font-family);
+    color: var(--sec-color);
+}
+
+.plant1 
+{
+    max-width: 400px;
+    width: 100%;
+}
+
+.about-content h2 span 
+{
+    color: var(--sec-color);
+}
+
+.about-content p 
+{
+    font-family: var(--f-font-family);
+}
+/* About End */
+
+
+/* Popular start */
+.popular 
+{
+    background: var(--main-sec-color);
+}
+
+.popular_header h2 
+{
+    color: var(--sec-color);
+    font-family: var(--f-font-family);
+}
+
+.popular .card 
+{
+    background: var(--card-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cart-icon 
+{
+    background: var(--sec-color);
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+
+.cart-icon a 
+{
+    color: #fff;
+}
+/* Popular End */
+
+
+/* Review start */
+.review 
+{
+    background: var(--main-color);
+    color: #fff;
+    position: relative;
+}
+
+.review-header  
+{
+    position: relative;
+}
+
+.review img 
+{
+    position: absolute;
+    left: 0;
+    max-width: 150px;
+    width: 100%;
+}
+
+.review-header h2 
+{
+    font-family: var(--f-font-family);
+    color: var(--sec-color);
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide .card
+{
+    background: var(--main-sec-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.review .swiper .swiper-pagination 
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Review End */
